@@ -128,3 +128,16 @@ button:focus {
     background-size: cover;
     height: 340px;
 }
+.content__info{
+    display:flex;
+    margin: 0 auto;
+    width: 960px;
+}
+.content__icon{
+    background: url(../img/content-icon.png) 0 0 no-repeat;
+    height: 25px;
+    width: 25px;
+}
+.content__about{
+    margin-right: 20px;
+}
