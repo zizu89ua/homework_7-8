@@ -12,6 +12,8 @@
 }
 header{
     background-image: url(../img/background.jpg);
+    background-size: cover;
+    height: 850px;
 }
 .header-content{
     margin: 0 auto;
@@ -54,8 +56,75 @@ nav a:hover{
 .header__link-style{
     color: #fff;
 }
+.hedaer__slider{
+    background-color: rgba(0, 0, 0, 0.3);
+    clear: both;
+    margin-top: 180px;
+    position: relative;
+}
+.header__slider-block{
+    margin: 0 auto;
+    position: relative;
+    width: 961px;
+}
 .header__text{
     font-family: OpenSans Light;
+    font-size: 18px;
+    color: #fff;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    width: 51%;
 }
-
-
+.header__image{
+    position: absolute;
+    right: 76px;
+    top: -16px;
+}
+.header__button{
+    position: absolute;
+    top: 133px;
+    right: 129px;
+}
+.header__button button{
+    background: none;
+    border: none;
+}
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
+.header__text h1{
+    color: #fff;
+    font-family: League Gothic Regular;
+    font-size: 60px;
+}
+.header__text h2{
+    color: #edbfff;
+    font-family: League Gothic Regular;
+    font-size: 32px;
+}
+.header__text p{
+    line-height: 24px;
+    padding-top: 3px;
+}
+.header__slider-point{
+    position: absolute;
+    bottom: -115px;
+    right: 171px
+}
+.header__slider-point li{
+    border: 1px #000 solid;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    opacity: 0.5;
+    margin-top: 30px;
+    background: #000;
+    border-radius: 7px;
+}
+.content__header-block{
+    background: url(../img/background-3.jpg);
+    background-size: cover;
+    height: 340px;
+}
