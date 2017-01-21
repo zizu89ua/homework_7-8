@@ -4,11 +4,15 @@
 }
 @font-face{
     font-family: League Gothic Regular;
-    src: url(../fonts/league-gothic.regular.ttf)
+    src: url(../fonts/league-gothic.regular.ttf);
 }
 @font-face{
     font-family: OpenSans Light;
-    src: url(../fonts/OpenSansLight.ttf)
+    src: url(../fonts/OpenSansLight.ttf);
+}
+@font-face{
+    font-family: OpenSans ExtraBold;
+    src: url(../fonts/OpenSans-ExtraBold.ttf);
 }
 header{
     background-image: url(../img/background.jpg);
@@ -204,7 +208,7 @@ button:focus {
     display: flex;
     margin: 0 auto;
     width: 960px;
-    height: 485px;
+    height: 385px;
     padding-left: 50px;
     padding-top: 101px;
 }
@@ -240,6 +244,10 @@ button:focus {
     color: #edbfff;
     text-shadow: none;
 }
+.right-col{
+    margin-left: 17px;
+    margin-top: 30px;
+}
 .right-header-title{
     color: #454545;
     font-family: League Gothic Regular;
@@ -247,6 +255,85 @@ button:focus {
     text-transform: uppercase;
     text-shadow: -1px 0px 0px rgba(204, 204, 204, 1);
 }
-.right-icon{
+.right-col__list{
+    position: relative;
+    padding-top: 20px;
+    padding-left: 68px;
+}
+.right-col__item{
+    margin-bottom: 26px;
+}
+.right-col__icon,
+.right-col__iconsecond,
+.right-col__iconthird{
     background: url(../img/icon-sprite.png) 0 0 no-repeat;
+    height: 49px;
+    left: 0;
+    position: absolute;
+    top: 16px;
+    width: 50px;
+}
+.right-col__iconsecond{
+    background-position: 0 -48px;
+    top: 80px;
+}
+.right-col__iconthird{
+    top: 147px;
+    background-position: 0 -96px;
+}
+.right-col__title{
+    color: #454545;
+    font-family: OpenSans ExtraBold;
+    font-size: 16px;
+    font-weight: bold;
+}
+.right-col__text{
+    color: #454545;
+    font-family: OpenSans Light;
+    font-size: 16px;
+    padding-top: 8px;
+}
+.right-col__link{
+    color: #454545;
+    font-family: League Gothic Regular;
+    font-size: 18px;
+    float: right;
+    margin-right: 12px;
+    margin-top: 27px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.central-block__brand--logo{
+    border-bottom: 1px #fff solid;
+    border-top: 1px #fff solid;
+    box-shadow: 0px 0px 0px 1px rgba(230,230,230,1)
+}
+.brand-block{
+    height: 95px;
+    margin: 0 auto;
+    padding-bottom: ;
+    padding-top: 25px;
+    text-align: center;
+    width: 960px;
+}
+.footer-wrap{
+    display: flex;
+    margin: 0 auto;
+    width: 960px;
+}
+.footer-block__block--logo .logo-name__link{
+    color: #454545;
+    opacity: 1;
+    text-shadow: none;
+}
+.footer-block__block--logo .logo-name__item{
+    background: #454545;
+    opacity: 0.5;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: none;
+}
+.footer-leftcol__title{
+    font-family: Georgia;
+    font-style: italic;
+    opacity: 0.3;
 }
