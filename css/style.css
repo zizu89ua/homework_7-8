@@ -69,7 +69,7 @@ nav{
     position: relative;
     width: 961px;
 }
-.header__text{
+.slider-text{
     font-family: OpenSans Light;
     font-size: 18px;
     color: #fff;
@@ -77,17 +77,17 @@ nav{
     padding-top: 80px;
     width: 51%;
 }
-.header__image{
+.slider-image{
     position: absolute;
     right: 76px;
     top: -16px;
 }
-.header__button{
+.slider-button{
     position: absolute;
     top: 133px;
     right: 129px;
 }
-.header__button button{
+.slider-button__play{
     background: none;
     border: none;
 }
@@ -96,26 +96,26 @@ button:active,
 button:focus {
     outline: none;
 }
-.header__text h1{
+.slider-text__titel{
     color: #fff;
     font-family: League Gothic Regular;
     font-size: 60px;
 }
-.header__text h2{
+.slider-text__subtitile{
     color: #edbfff;
     font-family: League Gothic Regular;
     font-size: 32px;
 }
-.header__text p{
+.slider-text__item{
     line-height: 24px;
     padding-top: 3px;
 }
-.header__slider-point{
+.slider-point{
     position: absolute;
     bottom: -115px;
     right: 171px
 }
-.header__slider-point li{
+.slider-point__item{
     border: 1px #000 solid;
     display: inline-block;
     width: 14px;
@@ -196,4 +196,57 @@ button:focus {
 }
 .content__read-more:hover{
     text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+}
+.central-block{
+    background: #f9f9f9;
+}
+.wrap-block{
+    display: flex;
+    margin: 0 auto;
+    width: 960px;
+    height: 485px;
+    padding-left: 50px;
+    padding-top: 101px;
+}
+.left-col{
+    background: url(../img/face-bgfon.png) 0 0 no-repeat;
+    position: relative;
+    padding-top: 30px;
+    padding-left: 41px;
+    width: 430px;
+}
+.left-col__item{
+    position: absolute;
+    top: 19px;
+    left: -22px;
+}
+.left-col__title{
+    color: #454545;
+    font-family: League Gothic Regular;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-shadow: -1px 0px 0px rgba(204, 204, 204, 1);
+}
+.left-col__text{
+    font-family: OpenSans Light;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: left;
+    text-shadow: -1px 0px 1px rgba(204, 204, 204, 1);
+    padding-right: 75px;
+    padding-top: 9px;
+}
+.left-col__colortext{
+    color: #edbfff;
+    text-shadow: none;
+}
+.right-header-title{
+    color: #454545;
+    font-family: League Gothic Regular;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-shadow: -1px 0px 0px rgba(204, 204, 204, 1);
+}
+.right-icon{
+    background: url(../img/icon-sprite.png) 0 0 no-repeat;
 }
