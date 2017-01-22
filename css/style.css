@@ -316,10 +316,23 @@ button:focus {
     text-align: center;
     width: 960px;
 }
+.footer-block{
+    background: #ececec;
+}
 .footer-wrap{
     display: flex;
+    font-family: OpenSans Light;
+    justify-content: space-between;
+    height: 300px;
     margin: 0 auto;
+    padding-top: 96px;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.9);
     width: 960px;
+}
+.footer-leftcol,
+.footer-centralcol,
+.footer-rightcol{
+    width: 30%;
 }
 .footer-block__block--logo .logo-name__link{
     color: #454545;
@@ -336,4 +349,27 @@ button:focus {
     font-family: Georgia;
     font-style: italic;
     opacity: 0.3;
+    margin-top: 62px;
+}
+.footer-leftcol__text,
+.footer-centralcol__text,
+.footer-rightcol__text{
+    height: 38%;
+    margin-top: 13px;
+    line-height: 23px;
+    overflow: hidden;
+}
+.footer-centralcol__text,
+.footer-rightcol__text{
+    height:53%;
+    margin-top: 17px;
+}
+.footer-centralcol__title,
+.footer-rightcol__title{
+    font-family: League Gothic Regular;
+    font-size: 30px;
+}
+footer{
+    background: url(../img/footerbg.jpg) 0 0 no-repeat;
+    height: 100px;
 }
