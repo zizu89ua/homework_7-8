@@ -31,7 +31,8 @@ header{
 .nav__list{
     display: inline-flex;
 }
-.nav__link{
+.nav__link,
+.nav__hidelink{
     color: #fff;
     font-family: League Gothic Regular;
     font-size: 24px;
@@ -40,6 +41,9 @@ header{
     text-transform: uppercase;
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
     
+}
+.nav__hidemenu{
+    display: none;
 }
 .logo-name__link{
     color: #fff;
@@ -415,6 +419,7 @@ footer{
     }
     header{
         height: 800px;
+        position: relative;
     }
     header,
     .wrap-block,
@@ -440,18 +445,80 @@ footer{
         float: none;
         margin-right: 0;
     }
-    .nav__list {
-        display: inline;
+    .nav{
+        margin-top: 30px;
     }
-   
-    .nav__item:nth-child(n+2){
+    .nav__list {
         display: none;
     }
-     .nav__link:active > .nav__list{
+    .nav__hidelist{
+        display: none;
+    }
+    .nav__hidemenu{
+        display: inline;
+    }
+    .nav__hideitem:active{
+        background: rgba(45,36,50,0.8);
+        margin: 0 auto;
+        width: 245px;
+    }
+    
+    .nav__hideitem:nth-child(n+2){
+        border-top: 1px #5f486a solid;
+        border-bottom: 1px #36283e solid;
+        border-right: none;
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+    .nav__hideitem:last-child{
+        border-bottom: none;
+    }
+    .nav__link:active ~ .nav__hidelist,
+    .nav__link:focus ~ .nav__hidelist,
+    .nav__hidelist:focus{
+        background: rgba(54,40,62,0.8);
+        border: 1px #000 solid;
+        border-radius: 10px;
         display: block;
+        margin: -35px auto;
+        padding-top: 45px;
+        position: relative;
+        z-index: 5;
+        width: 245px;
+    }
+    .slider{
+        margin-top: 0px;
+        position: absolute;
+        top: 205px;
     }
     .nav__link{
         margin-left: 0;
+    }
+    .nav__hidelink{
+        margin-left: 0;
+    }
+    .slider-text__titel{
+        font-size: 36px;
+    }
+    .slider-text__subtitile{
+        font-size: 18px;
+    }
+    .slider-text__item{
+        display: none;
+    }
+    .slider-image{
+        right: -43px;
+        top: -5px;
+    }
+    .slider-phoneimage{
+        width: 70%;
+    }
+    .slider-button{
+        top: 99px;
+        right: 60px
+    }
+    .button-image{
+        width: 70%;
     }
 }
 @media screen and (max-width: 768px) and (min-width: 480px) {
