@@ -409,7 +409,52 @@ footer{
 .made-by__text{
     font-family: OpenSans ExtraBold;
 }
-@media (max-width: 768px){
+@media screen and (max-width: 480px) and (min-width: 340px) {
+    body{
+        min-width: 479px;
+    }
+    header{
+        height: 800px;
+    }
+    header,
+    .wrap-block,
+    .slider-block,
+    .brand-block,
+    .content__info,
+    .content__header-block,
+    .wrap-block,
+    .central-block,
+    .brand-block__item,
+    .footer-wrap,
+    .footer-menu,
+    .footer-block,
+    .header-content,
+    footer{
+        width: 480px;
+        margin: 0;
+    }
+    .header-content{
+        text-align: center;
+    }
+    .logo-name__link{
+        float: none;
+        margin-right: 0;
+    }
+    .nav__list {
+        display: inline;
+    }
+   
+    .nav__item:nth-child(n+2){
+        display: none;
+    }
+     .nav__link:active > .nav__list{
+        display: block;
+    }
+    .nav__link{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 768px) and (min-width: 480px) {
     body{
         min-width: 768px;
     }
