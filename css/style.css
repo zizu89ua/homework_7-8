@@ -36,10 +36,10 @@ header{
     color: #fff;
     font-family: League Gothic Regular;
     font-size: 24px;
-    margin-left: 51px;
     text-decoration: none;
     text-transform: uppercase;
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+    margin-left: 51px;
     
 }
 .nav__hidemenu{
@@ -446,7 +446,79 @@ footer{
 .made-by__text{
     font-family: OpenSans ExtraBold;
 }
-@media screen and (max-width: 480px) and (min-width: 340px) {
+@media screen and (max-width: 319px){
+    .wrap-block,
+    .slider-block,
+    .content__info,
+    .content__header-block,
+    .brand-block__logo,
+    .wrap-block,
+    .central-block,
+    .brand-block__item,
+    .footer-wrap,
+    .footer-menu,
+    .footer-block,
+    .header-content,
+    footer{
+        width: 320px;
+        margin: 0;
+    }
+    body{
+        min-width: 319px;
+    }
+    .header-content{
+        text-align: center;
+    }
+    .logo-name__link{
+        float: none;
+        margin: 0 auto;
+    }
+    .nav{
+    margin-top: 30px;
+    }
+    .nav__list {
+        display: none;
+    }
+    .nav__hidelist{
+        display: none;
+    }
+    .nav__hidemenu{
+        display: inline;
+    }
+    .nav__hideitem:active{
+        background: rgba(45,36,50,0.8);
+        margin: 0 auto;
+        width: 245px;
+    }
+    
+    .nav__hideitem:nth-child(n+2){
+        border-top: 1px #5f486a solid;
+        border-bottom: 1px #36283e solid;
+        border-right: none;
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+    .nav__hideitem:last-child{
+        border-bottom: none;
+    }
+    .nav__link:active ~ .nav__hidelist,
+    .nav__link:focus ~ .nav__hidelist,
+    .nav__hidelist:focus{
+        background: rgba(54,40,62,0.8);
+        border: 1px #000 solid;
+        border-radius: 10px;
+        display: block;
+        margin: -35px auto;
+        padding-top: 45px;
+        position: relative;
+        z-index: 5;
+        width: 245px;
+    }
+    .nav__link{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 480px) and (min-width: 320px) {
     body{
         min-width: 479px;
     }
@@ -596,9 +668,9 @@ footer{
     }
     .left-col{
         margin-top: -33px;
-        margin-left: 42px;
         height: 260px;
-        width: 78%;;;
+        width: 78%;
+        margin-left: 42px;
     }
     .left-col__text{
         padding-right: 22px;
@@ -616,17 +688,27 @@ footer{
     }
     .right-col__hidelink{
         display: block;
+        padding-right: -13px;
+    }
+    .central-block__brand--logo{
+        margin-top: 62px;
+        height: 230px;;
     }
     .brand-block__logo{
         display: block;
+        padding-top: 11px;
     }
     .brand-block{
         float: left;
-        margin-left: 10%
+        margin-left: 12%;
+        height: 66px;
     }
     .footer-wrap{
         display: block;
-        height: 550px
+        height: 550px;
+        padding-top: 78px;
+        padding-left: 18px;
+        width: 93%;;
     }
     .footer-block__block--logo,
     .footer-leftcol__title,
@@ -642,6 +724,7 @@ footer{
     .footer-rightcol{
         height: 100px;
         width: 100%;
+        margin-bottom: 15px;
     }
     .footer-centralcol,
     .footer-rightcol{
