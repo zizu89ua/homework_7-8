@@ -1,0 +1,107 @@
+header,
+nav, 
+section,
+article,
+aside,
+footer {
+   display:block;
+}
+@font-face {
+    font-family: 'League Gothic Regular';
+    src: url(../fonts/LeagueGothicRegular.eot);
+    src: local(League Gothic Regular), url(../fonts/LeagueGothicRegular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+	font-family: 'OpenSans Light';
+    src: url(../fonts/OpenSansLight.eot);
+    src: local(OpenSans Light), url(../fonts/OpenSansLight.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+	font-family: 'OpenSans ExtraBold';
+    src: url(../fonts/OpenSansExtraBold.eot);
+    src: local(OpenSans ExtraBold), url(../fonts/OpenSansExtraBold.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+	margin: 0;
+	padding: 0
+}
+
+
+.nav__item{
+	float: left;
+}
+.nav__link{
+	filter: progid:DXImageTransform.Microsoft.Glow(Color=#000000,Strength=1.0)
+	progid:DXImageTransform.Microsoft.Alpha(opacity=25)
+	progid:DXImageTransform.Microsoft.Blur(pixelradius=1.75, enabled='true');
+	-ms-filter: "progid:DXImageTransform.Microsoft.Glow(Color=#000000,Strength=1.0)"
+	"progid:DXImageTransform.Microsoft.Alpha(opacity=25)"
+	"progid:DXImageTransform.Microsoft.Blur(pixelradius=1.75, enabled='true')";
+	margin-left: 50px;
+}
+.slider{
+	background: #000;
+	filter: alpha(opacity=30);
+}
+.slider-point__item{
+	background: #000;
+	behavior: url(pie/pie.htc);
+	position: relative;
+}
+.slider-point__select{
+	background: #fff;
+	behavior: url(pie/pie.htc);
+	position: relative;
+}
+.content__info{
+	display: block;
+}
+.content__about{
+	float: left;
+}
+.content__read-more:hover{
+
+}
+.content__text{
+	height: 115px;
+}
+.left-col{
+	float: left;
+}
+.right-col{
+	float: right;
+}
+.brand-block{
+	float: left;
+	margin-left: 7%;
+}
+.footer-leftcol,
+.footer-centralcol,
+.footer-rightcol{
+	float: left;
+}
+.footer-leftcol__text{
+	height: 115px;
+}
+.footer-centralcol__text,
+.footer-rightcol__text{
+	height: 160px;
+}
+.footer-block__block--logo .logo-name__link{
+	display: inline-block;
+	float: left;
+}
+.footer-block__block--logo .logo-name__item{
+	background: none;
+	filter: alpha(opacity=30);
+	display: inline-block;
+}
+.footer-leftcol__title{
+	filter: alpha(opacity=30);
+}

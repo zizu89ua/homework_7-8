@@ -265,9 +265,10 @@ button:focus {
 }.left-col__triangle{
     width: 0;
     height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-top: 100px solid red;
+    border-left: 60px solid transparent;
+    border-top: 54px solid #fffefe;
+    position: absolute;
+    right: 50px;
 }
 .right-col{
     margin-left: 17px;
@@ -451,7 +452,8 @@ footer{
     margin-right: 46px;
 }
 .made-by{
-    padding-top: 100px;
+    padding-top: 13px;
+    text-align: right;;
 }
 .made-by__item{
     color: #fff;
