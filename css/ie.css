@@ -81,17 +81,30 @@ footer {
 	float: left;
 	margin-left: 7%;
 }
-.footer-leftcol,
-.footer-centralcol,
-.footer-rightcol{
+.footer-leftcol{
 	float: left;
 }
+.footer-centralcol{
+	float: left;
+	margin-left: 50px;
+}
+.footer-rightcol{
+	float: right;
+}
 .footer-leftcol__text{
+	color: #888888;
 	height: 115px;
 }
 .footer-centralcol__text,
 .footer-rightcol__text{
+	color: #888888;
 	height: 160px;
+}
+.brand-block--style2{
+	background-position: -152px 0;
+}
+.brand-block--style3{
+	background-position: -225px 0;
 }
 .footer-block__block--logo .logo-name__link{
 	display: inline-block;
@@ -104,4 +117,5 @@ footer {
 }
 .footer-leftcol__title{
 	filter: alpha(opacity=30);
+	height: 20px;
 }
